@@ -58,7 +58,6 @@ describe('User opens Kiwi agregator website and performs search and checks the p
       .should('be.visible')
       .and('have.text', 'Checked baggage')
     cy.get('[data-test="bookingBillCheckedBaggage"] span.length-7')
-      .eq(0)
       .should('be.visible')
       .should('not.be.empty')
     cy.get('[data-test="Baggage-AddBlueRibbonBag"]').check({ force: true })
