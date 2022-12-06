@@ -1,4 +1,4 @@
-describe('empty spec', () => {
+describe('User opens Kiwi agregator website and performs search and checks the price', () => {
   beforeEach(() => {
     cy.visit('/')
     cy.get('#cookies_accept').click()
