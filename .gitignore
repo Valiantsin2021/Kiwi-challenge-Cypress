@@ -1,0 +1,9 @@
+node_modules/
+screenshots/
+videos/
+results/
+index.json
+allure-report
+allure-results
+data/
+out/
