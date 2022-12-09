@@ -1,7 +1,7 @@
 describe('User opens Kiwi agregator website and performs search and checks the price', () => {
   beforeEach(() => {
     cy.visit('/')
-    cy.get('#cookies_accept').click()
+    cy.get('#cookies_accept').should('be.be.visible').click({ force: true })
   })
   it('Performs UI flight search on Kiwi agregator and checks the prices are shown', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
@@ -49,7 +49,6 @@ describe('User opens Kiwi agregator website and performs search and checks the p
         holdBags: 1
       }
     })
-    //assert price is visible
     cy.get('.ReservationBill-item-price')
       .should('be.visible')
       .should('not.be.empty')
