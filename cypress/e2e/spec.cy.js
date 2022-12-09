@@ -5,8 +5,6 @@ describe('User opens Kiwi agregator website and performs search and checks the p
   })
   it('Performs UI flight search on Kiwi agregator and checks the prices are shown', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
-      // returning false here prevents Cypress from
-      // failing the test
       return false
     })
     cy.get('[data-test="PlacePickerInputPlace-close"]').click()
